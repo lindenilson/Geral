@@ -1,0 +1,72 @@
+/*INICIO ESTILIZAÇÃO GERAL*/
+.conteiner-conteudo {
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    border-top: 2px solid rgb(73, 72, 72);
+    background-position: center;
+    background-color: rgb(247, 247, 247);
+
+}
+
+/*FIM ESTILIZAÇÃO GERAL*/
+
+/*INICIO ESTILIZAÇÃO TEXTO*/
+.conteiner-text {
+    padding: 30px;
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 17px;
+
+}
+
+.conteiner-text h1 span {
+    color: #005C82;
+}
+
+.conteiner-text p {
+
+    max-width: 60%;
+    text-align: justify;
+}
+
+span {
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+
+}
+
+/*FIM ESTILIZAÇÃO TEXTO*/
+
+/*INICIO ESTILIZAÇÃO BUTTON DO CONTEINER TEXTO*/
+.conteiner-text button {
+    padding: 8px;
+    width: 30%;
+    font-weight: 600;
+    font-size: 13px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px #014c6d;
+    background-color: #005C82;
+    align-items: center;
+    color: white;
+    margin-top: 10px;
+}
+
+.conteiner-text button:hover {
+    background-color: #005b82b0;
+    transition: 0.5s;
+}
+
+/*FIM ESTILIZAÇÃO BUTTON DO CONTEINER TEXTO*/
+
+/*INICIO ESTILIZAÇÃO DA IMAGEM*/
+img {
+    height: 500px;
+    width: auto;
+}
+
+/*FIM ESTILIZAÇÃO DA IMAGEM*/

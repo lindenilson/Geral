@@ -1,0 +1,98 @@
+/*INICIO ESTILIZAÇÃO GERAL*/
+.conteiner-rodape {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #005C82;
+    padding: 30px;
+    color: rgb(247, 247, 247);
+    width: 100%;
+    height: 160px;
+    padding: 25px 50px;
+    border-top: 2px solid rgb(73, 72, 72);
+}
+
+/*FIM ESTILIZAÇÃO GERAL*/
+
+/*INICIO ESTILIZAÇÃO TEXTO*/
+.conteiner-rodape-text {
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    text-align: justify;
+    gap: 10px;
+}
+
+/*FIM ESTILIZAÇÃO TEXTO*/
+
+/*INICIO ESTILIZAÇÃO MENU*/
+.conteiner-rodape-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+/*FIM ESTILIZAÇÃO MENU*/
+
+/*INICIO ESTILIZAÇÃO FORMULÁRIO*/
+.conteiner-rodape-formulario {
+    font-weight: 600;
+
+
+}
+
+.conteiner-rodape-formulario input {
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+    background-color: #006c9b;
+    box-shadow: 2px 2px 2px #014c6d;
+}
+
+.conteiner-rodape-formulario input::placeholder {
+    color: rgb(247, 247, 247);
+}
+
+.conteiner-rodape-formulario input:hover::placeholder {
+    color: #005C82;
+    transition: 0.5s;
+}
+
+
+.conteiner-rodape-formulario input:hover {
+    background-color: rgb(247, 247, 247);
+    transition: 0.5s;
+}
+
+.conteiner-rodape-formulario input:focus {
+    outline: none;
+}
+
+/*FIM ESTILIZAÇÃO FORMULÁRIO*/
+
+/*INICIO ESTILIZAÇÃO BUTTOM DO FORMULÁRIO*/
+.conteiner-rodape-formulario button {
+    padding: 8px;
+    width: 120px;
+    font-weight: 600;
+    font-size: 13px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px #014c6d;
+    background-color: #006c9b;
+    align-items: center;
+    color: white;
+    margin-top: 10px;
+
+}
+
+.conteiner-rodape-formulario button:hover {
+    background-color: rgb(247, 247, 247);
+    color: #005C82;
+    transition: 0.5s;
+
+}
+
+/*FIM ESTILIZAÇÃO BUTTOM DO FORMULÁRIO*/

@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: blueviolet;
+    margin: 20px 0px;
+
+}
+
+.conteiner {
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.308);
+    max-width: 300px;
+
+}
+
+h2 {
+    margin: 0;
+    text-align: center;
+    font-size: 30px;
+}
+
+fieldset {
+    border-radius: 10px;
+    border-color: blueviolet;
+}
+
+input {
+    border-color: blueviolet;
+    border-radius: 10px;
+    background: rgba(202, 202, 202, 0.158);
+    margin: 4px;
+}
+
+input:focus {
+    border-color: blueviolet;
+    background: rgba(137, 43, 226, 0.158);
+    outline: none;
+}
+
+input[type="text" i] {
+    padding: 6px;
+}
+input[type="cpf" i] {
+    padding: 6px;
+}
+input[type="tel" i] {
+    padding: 6px;
+}
+input[type="date" i] {
+    padding: 6px;
+}
+
+textarea {
+    border-color: blueviolet;
+    border-radius: 10px;
+    background: rgba(202, 202, 202, 0.158);
+    margin: 4px;
+}
+textarea[type="text" i] {
+    padding: 6px;
+}
+
+textarea:focus {
+    border-color: blueviolet;
+    background: rgba(137, 43, 226, 0.158);
+    outline: none;
+
+}
+
+button {
+
+    border-radius: 10px;
+    background: blueviolet;
+    margin: 0px;
+    color: white;
+    padding: 10px;
+    border: 0;
+}
+
+button:focus {
+    background-color: rgb(122, 15, 223);
+}
+
+button:hover {
+    background-color: rgb(122, 15, 223);
+
+}
+
+select:focus {
+    border-color: blueviolet;
+    background: rgba(137, 43, 226, 0.158);
+    outline: none;
+
+}
+
+select:not(:-internal-select-author-button) {
+    padding: 6px;
+}
+
