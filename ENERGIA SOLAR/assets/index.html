@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="./styles/geral.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <!--INICIO DO HEADER-->
+    <header class="conteiner-cabecalho">
+        <img class="logo" src="./img/logo.svg" alt="logo"> <!--LOGO DA PAGINA-->
+
+        <!--INICIO MENU DE NAVEGAÇÃO-->
+        <nav class="cabecalho-navegation">
+
+            <ul class="cabecalho-navegation-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Promoções</a></li>
+                <li><a href="#">Contatos</a></li>
+            </ul>
+        </nav>
+        <nav class="cabecalho-navegation-mobile">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="menu-icon-line"></div>
+                <div class="menu-icon-line"></div>
+                <div class="menu-icon-line"></div>
+            </div>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+
+        <!--FIM MENU DE NAVEGAÇÃO-->
+
+    </header>
+    <!--FIM DO HEADER-->
+
+    <!--INICIO CONTEUDO PRINCIPAL DA PAGINA-->
+    <main class="conteiner-conteudo">
+        <!--INICIO CONTEUDO DE TEXTO  PG PRINCIPAL-->
+
+        <section class="conteiner-img-mobile">
+            <img src="./img/banner.svg" alt="bannerproduto" style="height: 25rem;">
+
+        </section>
+
+        <section class="conteiner-text">
+            <h1>Texto Principal</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur illum magni corrupti enim, ipsum
+                placeat et tempora ratione earum, ullam aspernatur. Suscipit, vitae inventore dolorem modi sit corporis
+                perspiciatis numquam.</p>
+            <button type="submit">Ver Todos<i class='bx bx-chevron-right'></i></button>
+
+
+        </section>
+        <!--FIM CONTEUDO DE TEXTO  PG PRINCIPAL-->
+
+        <!--INICIO CONTEUDO DE IMAGEM  PG PRINCIPAL-->
+
+        <section class="conteiner-img">
+            <img src="./img/banner.svg" alt="bannerproduto">
+
+        </section>
+        <!--FIM CONTEUDO DE IMAGEM  PG PRINCIPAL-->
+    </main>
+    <!--FIM CONTEUDO PRINCIPAL DA PAGINA-->
+
+    <!--INICIO DO RODAPÉ DA PAGINA-->
+    <footer class="conteiner-rodape">
+        <!--INICIO DO TEXTO SOBRE A EMPRESA RODAPÉ-->
+        <div class="conteiner-rodape-text">
+            <h3 class="conteiner-rodape-text-h3">Sobre Nós</h3>
+            <p class="conteiner-rodape-text-h3">Na Energy, privacidade e segurança são
+                prioridades e nos comprometemos com a transparência do tratamento de dados pessoais dos nossos
+                usuários/clientes.</p>
+
+        </div>
+        <!--FIM DO TEXTO SOBRE A EMPRESA RODAPÉ-->
+
+        <!--INICIO DO MENU RODAPÉ-->
+        <ul class="conteiner-rodape-menu">
+            <li><a href="#">Politica de privacidade</a></li>
+            <li><a href="#">Fale Conosco</a></li>
+            <li><a href="#">Termos de uso</a></li>
+        </ul>
+        <!--FIM DO MENU RODAPÉ-->
+
+        <!--INICIO DO FORMULÁRIO DO RODAPÉ-->
+
+        <form class="conteiner-rodape-formulario" action="formulario" method="post">
+            <label for="email">Saiba das Promoções</label><br>
+            <input type="email" id="email" placeholder="Digite seu Email"><br>
+
+            <button type="submit" id="email">Enviar</button>
+        </form>
+        <!--FIM DO FORMULÁRIO DO RODAPÉ-->
+
+    </footer>
+    <!--FIM DO RODAPÉ DA PAGINA-->
+
+    <script src="./javascript/arquivo.js"></script>
+</body>
+
+</html>

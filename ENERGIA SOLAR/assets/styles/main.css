@@ -1,0 +1,129 @@
+/*INICIO ESTILIZAÇÃO GERAL*/
+.conteiner-conteudo {
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    border-top: 2px solid rgb(73, 72, 72);
+    background-position: center;
+    background-color: rgb(247, 247, 247);
+
+}
+
+/*FIM ESTILIZAÇÃO GERAL*/
+
+.conteiner-img-mobile {
+    display: none;
+}
+
+/*INICIO ESTILIZAÇÃO TEXTO*/
+.conteiner-text {
+    padding: 30px;
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 17px;
+
+}
+
+.conteiner-text h1 span {
+    color: #005C82;
+}
+
+.conteiner-text p {
+
+    max-width: 60%;
+    text-align: justify;
+}
+
+/*FIM ESTILIZAÇÃO TEXTO*/
+
+/*INICIO ESTILIZAÇÃO BUTTON DO CONTEINER TEXTO*/
+.conteiner-text button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0.9rem;
+    border: none;
+    background-color: var(---background-color);
+    color: white;
+    border-radius: 0.2rem;
+    height: 2.4rem;
+    box-shadow: 2px 2px 2px #014c6d;
+    transition: all 300ms ease-in-out;
+
+}
+
+.conteiner-text button i {
+    padding: 0;
+    margin: 0;
+
+}
+
+.conteiner-text button:hover {
+    background-color: #005b82b0;
+    transition: 0.5s;
+}
+
+/*FIM ESTILIZAÇÃO BUTTON DO CONTEINER TEXTO*/
+
+/*INICIO ESTILIZAÇÃO DA IMAGEM*/
+img {
+    height: 500px;
+    width: auto;
+}
+
+/*INICIO ESTILIZAÇÃO SETA DO BOTÃO MAIN TEXT*/
+
+i {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    margin: 0px 0px 0px 10px;
+
+}
+
+
+/*FIM ESTILIZAÇÃO DA IMAGEM*/
+
+/* INICIO ESTILIZAÇÃO PARA MOBILE*/
+@media(max-width:785px) {
+
+    .conteiner-img-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    .conteiner-conteudo {
+        display: block;
+        max-width: 100%;
+    }
+
+    .conteiner-text {
+        padding: 20px 0px;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 17px;
+    }
+
+    .conteiner-text h1 {
+        font-size: 30px;
+        font-weight: 900;
+    }
+
+    .conteiner-text p {
+        font-size: 17px;
+        font-weight: 500;
+    }
+
+    .conteiner-text button {
+        font-size: 17px;
+        font-weight: 900;
+        width: 55%;
+    }
+}
