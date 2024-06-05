@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento de Energia Solar</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header class="home">
+        <div class="imagem-logo">
+            <img src="./img/logo.png" alt="logo da pagina">
+        </div>
+    </header>
+    <section class="section form-content">
+        <h1>GERADOR DE PROPOSTA</h1>
+        <div class="contact-content main-content">
+            <div class="contact-form">
+                <fieldset class=" form-grid info-proposta">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="endereco">Endereço:</label>
+                        <input type="text" id="endereco" name="endereco">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="paineis">Quantidade de Painéis:</label>
+                        <input type="number" id="paineis" name="paineis" required min="0"
+                            oninput="validarPositivo(this)">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="potenciaPaineis">Potência dos Painéis (W):</label>
+                        <input type="number" id="potenciaPaineis" name="potenciaPaineis" required min="0"
+                            oninput="validarPositivo(this)">
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="inversor">Inversor (kW):</label>
+                        <input type="text" id="inversor" name="inversor" required min="0"
+                            oninput="validarPositivo(this)">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tipoInversor">Tipo do Inversor:</label>
+                        <select id="tipoInversor" name="tipoInversor">
+                            <option value="">Selecione</option>
+                            <option value="Monofásico 220v">Monofásico 220v</option>
+                            <option value="Trifásico 380v">Trifásico 380v</option>
+                            <option value="Trifásico 220v">Trifásico 220v</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="estrutura">Estrutura:</label>
+                        <select id="estrutura" name="estrutura">
+                            <option value="">Selecione</option>
+                            <option value="Solo">Solo</option>
+                            <option value="Metálico">Telhado Metálico</option>
+                            <option value="Cerâmico">Telhado Cerâmico</option>
+                            <option value="Conta do Cliente">Por Conta do Cliente</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <fieldset class=" form-grid pagamento-proposta">
+                    <legend class="pagamento">Forma de Pagamento</legend>
+
+                    <div class="form-group">
+                        <label for="vista">Valor à vista (R$):</label>
+                        <input type="number" id="vista" name="vista" required min="0" oninput="validarPositivo(this)">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="entrada">Valor de Entrada (R$):</label>
+                        <input type="number" id="entrada" name="entrada" required min="0"
+                            oninput="validarPositivo(this)">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="parcelas">Quantidade de Parcelas:</label>
+                        <select id="parcelas" name="parcelas">
+                            <option value="selecione">Selecione</option>
+                            <option value="1">1X</option>
+                            <option value="2">2X</option>
+                            <option value="3">3X</option>
+                            <option value="4">4X</option>
+                            <option value="5">5X</option>
+                            <option value="6">6X</option>
+                            <option value="7">7X</option>
+                            <option value="8">8X</option>
+                            <option value="9">9X</option>
+                            <option value="10">10X</option>
+                            <option value="11">11X</option>
+                            <option value="12">12X</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="taxa">Valor Total Parcelado (R$):</label>
+                        <input type="number" id="taxa" name="taxa" required min="0" oninput="validarPositivo(this)">
+                    </div>
+                </fieldset>
+                <div class="button form-group ">
+                    <button type="button" onclick="enviarWhatsApp()">Enviar via WhatsApp</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
