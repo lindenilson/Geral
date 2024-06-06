@@ -51,12 +51,12 @@ function enviarWhatsApp() {
     const inversor = document.getElementById('inversor').value;
     const tipoInversor = document.getElementById('tipoInversor').value;
     const estrutura = document.getElementById('estrutura').value;
-    const vista = document.getElementById('vista').value;
+    const custo = document.getElementById('custo').value;
     const entrada = document.getElementById('entrada').value;
     const parcelas = document.getElementById('parcelas').value;
     const taxa = document.getElementById('taxa').value;
 
-    
+    const valorAVista = parseFloat(custo) + parseFloat(entrada);
     const capacidadeMaximaPaineis = calcularCapacidadePainel(inversor, potenciaPaineis);
     const geracaoMaxima = calcularGeracaoMaxima(capacidadeMaximaPaineis, potenciaPaineis);
     const geracao = arredondarParaMaisProximo(((paineis * potenciaPaineis) / 1000) * 140, 50); //geração com painéis digitados
@@ -81,13 +81,18 @@ function enviarWhatsApp() {
 ✅ Homologação
 
 *FORMA DE PAGAMENTO:*
-*💰 À vista:* ${formatarParaReais(vista)}
+*💰 À vista:* ${formatarParaReais(valorAVista)}
 
 *💳 Cartão:*
 Entrada de ${formatarParaReais(entrada)}
 Restante em ${parcelas}x de ${formatarParaReais(valorParcela.toFixed(2))}
 
-Inversor com capacidade para *${capacidadeMaximaPaineis} painéis de ${potenciaPaineis}W/${geracaoMaxima} kwh.*`;
+Inversor com capacidade para *${capacidadeMaximaPaineis} painéis de ${potenciaPaineis}W/${geracaoMaxima} kwh.*
+
+⚠ ATENÇÃO!
+Por que escolher a IrriSol?
+🔗 Somos única empresa que oferece garantia estendida*;
+🚿 Limpeza dos Painéis.`;
 
     const numeroWhatsApp = prompt("Por favor, insira o número de WhatsApp do cliente (com DDD):");
 
