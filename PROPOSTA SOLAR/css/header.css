@@ -1,0 +1,86 @@
+.menu {
+    background-color: white;
+    position: fixed;
+    /* DEIXAR O MENU FIXADO NO TOPO */
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    /*DEIXAR O MENU NA LARGURA TOTAL*/
+    border-bottom: 0.1rem solid rgb(233, 233, 233);
+    /* BORDA ENTRE MENU E A SEÇÃO */
+    z-index: 1;
+
+}
+
+/* DEIXAR A LOGO E A LISTA ALINHADAS UMA NA FRENTE DA OUTRA */
+.menu-content {
+    max-width: 120rem;
+    /* MAX DE LARGURA */
+    margin: 0 auto;
+    /* CENTRALIZA TUDO*/
+    padding: var(--gap);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/* FIM CONFIGURAÇÃO DE CLASSES PADRÃO */
+
+/* INICIO CONFIGURAÇÃO DO MENU */
+
+.menu h1 a {
+    font-size: 4rem;
+    text-decoration: none;
+    /*REMOVE TRAÇO ABAIXO DO LINK*/
+    color: var(--primary-color);
+}
+
+.menu ul {
+    list-style: none;
+    /* REMOVE PONTO DA DA LISTA UL*/
+    display: flex;
+    padding: 0 3rem;
+
+}
+
+.menu ul li a {
+    display: block;
+    text-decoration: none;
+    /*REMOVE TRAÇO ABAIXO DO LINK*/
+    color: var(--primary-color);
+    padding: 3rem;
+    font-size: 1.6rem;
+    position: relative;
+}
+
+.menu img {
+    height: 8rem;
+}
+
+/* INICIO BARRA ABAIXO DO MENU QUANDO PASSA O MOUSE*/
+.menu ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 2.2rem;
+    left: 50%;
+    width: 0;
+    height: 0.2rem;
+    background: var(--primary-color);
+    transition: all 300ms ease-in-out;
+    /* TRANSIÇÃO AO PASSAR O MOUSE*/
+}
+
+.menu ul li a:hover::after {
+    width: 50%;
+    left: 25%;
+}
+
+.close-menu {
+    display: none;
+}
+
+/* FIM BARRA ABAIXO DO MENU QUANDO PASSA O MOUSE*/
+
+/* FIM CONFIGURAÇÃO DO MENU */

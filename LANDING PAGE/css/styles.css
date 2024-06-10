@@ -564,7 +564,7 @@ button:hover {
 
 }
 
-@media (max-width: 1130px) {
+@media (max-width: 600px) {
     .menu {
         bottom: 0;
 

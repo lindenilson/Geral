@@ -1,135 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-:root {
-    --primary-color: #00426D;
-    --white-color: #ffffff;
-    --gap: 3rem;
-}
-
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-}
-
-html {
-    font-size: 62.5%;
-    scroll-behavior: smooth;
-}
-
-h1 {
-    font-size: 4rem;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-h2 {
-    font-size: 4.5rem;
-    text-transform: uppercase;
-}
-
-h3 {
-    font-size: 4rem;
-    /*text-transform: uppercase;*/
-    /* DEIXAR LETRAS MAIUSCULAS*/
-}
-
-h4 {
-    font-size: 3.8rem;
-    text-transform: uppercase;
-}
-
-h5 {
-    font-size: 3.5rem;
-
-}
-
-h6 {
-    font-size: 3.3rem;
-
-}
-
-p,
-a,
-label,
-button,
-input,
-legend {
-    font-size: 1.6rem;
-    color: var(--white-color);
-}
-
-input,
-select {
-    border: none;
-    border-radius: 0.5rem;
-    outline: none;
-    transition: all 300ms ease-in-out;
-    color: black;
-    transition: box-shadow 0.3s ease;
-
-}
-
-input:focus {
-    border: 2px solid #003355;
-    /* Altera a cor da borda quando o input está focado */
-    box-shadow: 5px 5px 5px #003355;
-    /* Adiciona um efeito de sombra azul */
-}
-
-select:focus {
-    border: 2px solid #003355;
-    /* Altera a cor da borda quando o input está focado */
-    box-shadow: 5px 5px 5px #003355;
-    /* Adiciona um efeito de sombra azul */
-}
-
-input:hover {
-    background-color: rgba(255, 255, 255, 0.911);
-}
-
-input::after {
-    color: var(--primary-color);
-
-}
-
-fieldset {
-    border: none;
-}
-
-
-.pagamento {
-    font-weight: bold;
-    padding-top: 3rem;
-    font-size: 2rem;
-
-}
-
-.home {
-    background-color: var(--white-color);
-    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.562);
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
-}
-
-.imagem-logo img {
-    height: 8rem;
-    margin: 0 auto;
-}
-
-body {
-    background-color: var(--primary-color);
-}
-
 .section {
     min-height: 100vh;
 }
 
-
+/*CONFIG PRINCIPAL CONTEINER AZUL*/
 .main-content {
     max-width: 120rem;
     /* MAX DE LARGURA */
@@ -143,12 +16,69 @@ body {
     padding-bottom: 0;
 }
 
+.pagamento {
+    font-weight: bold;
+    padding-top: 3rem;
+    font-size: 2rem;
+
+}
+
+/*CONTEINER BRANCO*/
+.main-white {
+    background-color: var(--white-color)
+}
+
+/*CONFIG CONTEINER BRANCO*/
+.main-white h1,
+h2,
+h3,
+a,
+p,
+td,
+th,
+label {
+    color: var(--primary-color);
+}
+
+.main-white h2 {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.main-white a,
+p,
+td,
+th {
+    font-size: 1.6rem;
+}
+
+
+
+
+
+/*CONFIG PRINCIPAL CONTEINER BRANCO*/
+.white-content {
+    max-width: 120rem;
+    /* MAX DE LARGURA */
+    margin: 0 auto;
+    /* CENTRALIZA TUDO*/
+    padding: var(--gap);
+    padding-top: 6.8rem;
+    padding-bottom: 10rem;
+}
+
+
+/*INICIO CONFIG PRIMEIRA SEÇÃO*/
+
+
 .form-content {
-    margin-top: 3rem;
+    background-color: var(--primary-color);
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.562);
 }
 
 .form-content h1 {
     color: var(--white-color);
+    padding-top: 6rem;
 }
 
 .contact-content {
@@ -190,11 +120,35 @@ select {
 
 }
 
+.input-table {
+    background-color: #dbdbdb60;
+    padding: 0.8rem;
+    box-shadow: 2px 2px 2px #00335596;
+    transition: all 300ms ease-in-out;
+}
+
+.responsive-table {
+    height: 38rem;
+    /* Define a altura fixa do contêiner */
+    overflow-y: auto;
+    /* Adiciona a barra de rolagem vertical */
+    border: 1px solid #bbbbbb;
+    /* Adiciona uma borda ao contêiner */
+    margin-top: 1.8rem;
+
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f5f5f58e;
+    /* Cor de fundo das linhas pares */
+}
+
+
 .button {
     display: block;
 }
 
-button {
+.button button {
     border: 0.3rem solid var(--white-color);
     background: none;
     padding: 1.5rem;
@@ -202,7 +156,7 @@ button {
     transition: all 300ms ease-in-out;
     width: 30rem;
     margin-top: 2rem;
-    margin-bottom: 5rem;
+    margin-bottom: 10rem;
     width: 100%;
     border-radius: 0.5rem;
 
@@ -218,20 +172,35 @@ button:hover {
 
 }
 
-@media (max-width: 550px) {
+/*INICIO CONFIG PRIMEIRA SEÇÃO*/
 
-    h1 {
-        font-size: 3rem;
-
-
-    }
+table {
+    min-width: 600px;
+    width: 100%;
+    border-collapse: collapse;
 }
 
-@media (max-width: 420px) {
+table td,
+table th {
+    padding: 0.5rem;
+    text-align: left;
+    border: 0.1rem solid rgb(206, 206, 206);
+}
 
-    h1 {
-        font-size: 2.3rem;
+tfoot th,
+thead th {
+    background: rgb(226, 226, 226);
+}
 
+thead th {
+    position: sticky;
+    /* Fixa o cabeçalho */
+    top: 0;
+    /* Fixa o cabeçalho no topo do contêiner */
 
-    }
+    /* Garante que o cabeçalho fique acima das outras linhas */
+}
+
+.espaco {
+    height: 8rem;
 }

@@ -101,3 +101,77 @@ Por que escolher a IrriSol?
         window.open(url, '_blank');
     }
 }
+
+
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+//INICIO CONFIGURAÇÃO SEÇÃO TABELA
+
+
+function arredondarParaMenos(valor) {
+    return Math.floor(valor);
+}
+
+
+function calcularCapacidadePainel(kwpMax, potenciaPainel) {
+    // Aplicando a fórmula: kwpMax / potenciaPainel * 1000
+    const capacidadePainel = arredondarParaMenos(kwpMax * 1000 / potenciaPainel);
+    return capacidadePainel;
+}
+
+function calcularGeracaoMaxima(capacidadeMaximaPaineis, potenciaPainel) {
+    const fator2 = 140; // Fator de eficiência (ajustável)
+    
+    const potenciaTotalW = arredondarParaMenosProximo((capacidadeMaximaPaineis * potenciaPainel / 1000) * fator2, 50);
+    return potenciaTotalW;
+}
+
+function atualizarTabela() {
+    const potenciaPainel = parseFloat(document.getElementById('potenciaPainel').value);
+
+    const inversores = [
+        { kw: 3, kwpMax: 3.6 },
+        { kw: 4, kwpMax: 5.2 },
+        { kw: 5, kwpMax: 6.5 },
+        { kw: 8, kwpMax: 10.4 },
+        { kw: 10, kwpMax: 13 },
+        { kw: 12, kwpMax: 15.6 },
+        { kw: 15, kwpMax: 19.5 },
+        { kw: 18, kwpMax: 21.6 },
+        { kw: 20, kwpMax: 26 },
+        { kw: 25, kwpMax: 32.5 },
+        { kw: 30, kwpMax: 39 },
+        { kw: 35, kwpMax: 45.5 },
+        { kw: 40, kwpMax: 52 },
+        { kw: 45, kwpMax: 58.5 },
+        { kw: 50, kwpMax: 65 },
+        { kw: 60, kwpMax: 78 },
+        { kw: 70, kwpMax: 91 },
+        { kw: 75, kwpMax: 97.5 },
+        { kw: 80, kwpMax: 104 },
+        { kw: 90, kwpMax: 135 },
+        { kw: 100, kwpMax: 150 },
+        { kw: 110, kwpMax: 150 },
+
+        // Adicione mais inversores conforme necessário
+    ];
+
+    inversores.forEach(inversor => {
+        const capacidadeMaximaPaineis = calcularCapacidadePainel(inversor.kwpMax, potenciaPainel);
+        const geracaoMaxima = calcularGeracaoMaxima(capacidadeMaximaPaineis, potenciaPainel);
+
+        document.getElementById(`paineis${inversor.kw}`).innerText = capacidadeMaximaPaineis;
+        document.getElementById(`geracao${inversor.kw}`).innerText = geracaoMaxima;
+    });
+}
+
+// Inicialize a tabela com valores padrão
+atualizarTabela();
+
+
+
+
+
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
