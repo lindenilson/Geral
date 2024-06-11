@@ -105,7 +105,6 @@ Por que escolher a IrriSol?
 
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
 //INICIO CONFIGURAÇÃO SEÇÃO TABELA
 
 
@@ -114,13 +113,13 @@ function arredondarParaMenos(valor) {
 }
 
 
-function calcularCapacidadePainel(kwpMax, potenciaPainel) {
+function calcularCapacidadePainel2(kwpMax, potenciaPainel) {
     // Aplicando a fórmula: kwpMax / potenciaPainel * 1000
-    const capacidadePainel = arredondarParaMenos(kwpMax * 1000 / potenciaPainel);
-    return capacidadePainel;
+    const capacidadePainel2 = arredondarParaMenos(kwpMax * 1000 / potenciaPainel);
+    return capacidadePainel2;
 }
 
-function calcularGeracaoMaxima(capacidadeMaximaPaineis, potenciaPainel) {
+function calcularGeracaoMaxima2(capacidadeMaximaPaineis, potenciaPainel) {
     const fator2 = 140; // Fator de eficiência (ajustável)
     
     const potenciaTotalW = arredondarParaMenosProximo((capacidadeMaximaPaineis * potenciaPainel / 1000) * fator2, 50);
@@ -158,16 +157,17 @@ function atualizarTabela() {
     ];
 
     inversores.forEach(inversor => {
-        const capacidadeMaximaPaineis = calcularCapacidadePainel(inversor.kwpMax, potenciaPainel);
-        const geracaoMaxima = calcularGeracaoMaxima(capacidadeMaximaPaineis, potenciaPainel);
+        const capacidadeMaximaPaineis = calcularCapacidadePainel2(inversor.kwpMax, potenciaPainel);
+        const geracaoMaxima2 = calcularGeracaoMaxima2(capacidadeMaximaPaineis, potenciaPainel);
 
         document.getElementById(`paineis${inversor.kw}`).innerText = capacidadeMaximaPaineis;
-        document.getElementById(`geracao${inversor.kw}`).innerText = geracaoMaxima;
+        document.getElementById(`geracao${inversor.kw}`).innerText = geracaoMaxima2;
     });
 }
 
 // Inicialize a tabela com valores padrão
 atualizarTabela();
+
 
 
 
