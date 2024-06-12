@@ -42,8 +42,21 @@ function arredondarParaMaisProximo(valor, multiplo) {
     return Math.floor(valor / multiplo) * multiplo;
 }
 
-
 function enviarWhatsApp() {
+    const inputs = document.querySelectorAll('input[required], select[required]');
+        let allFilled = true;
+
+        inputs.forEach(input => {
+        if (!input.value) {
+           input.classList.add('input-error');
+            allFilled = false;
+        } else {
+            input.classList.remove('input-error');
+        }
+   });
+
+        if (allFilled) {
+            // Coloque aqui o código para enviar a mensagem via WhatsApp
     const nome = document.getElementById('nome').value;
     const endereco = document.getElementById('endereco').value;
     const paineis = document.getElementById('paineis').value;
@@ -94,12 +107,15 @@ Por que escolher a IrriSol?
 🔗 Somos única empresa que oferece garantia estendida*;
 🚿 Limpeza dos Painéis.`;
 
-    const numeroWhatsApp = prompt("Por favor, insira o número de WhatsApp do cliente (com DDD):");
+const numeroWhatsApp = document.getElementById('numeroWhatsApp').value;
 
     if (numeroWhatsApp) {
         const url = `https://api.whatsapp.com/send?phone=55${numeroWhatsApp}&text=${encodeURIComponent(mensagem)}`;
         window.open(url, '_blank');
     }
+}  else {
+    alert('Por favor, preencha todos os campos obrigatórios.');
+}
 }
 
 
@@ -174,4 +190,3 @@ atualizarTabela();
 
 
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-

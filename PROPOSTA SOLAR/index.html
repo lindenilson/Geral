@@ -42,37 +42,45 @@
         <div class="contact-content main-content">
             <div class="contact-form">
                 <fieldset class=" form-grid info-proposta">
+
+                    <!-- Adicione um campo de entrada para o número do WhatsApp -->
+                    <div class=" form-group whatsapp-number">
+                        <label for="numeroWhatsApp">Número do WhatsApp (com DDD): <span
+                                class="required">*</span></label>
+                        <input type="text" id="numeroWhatsApp" name="numeroWhatsApp" required>
+                    </div>
+
                     <div class="form-group">
-                        <label for="nome">Nome:</label>
+                        <label for="nome">Nome: <span class="required">*</span></label>
                         <input type="text" id="nome" name="nome" required>
                     </div>
 
                     <div class="form-group">
-                        <label for="endereco">Endereço:</label>
+                        <label for="endereco">Endereço: <span class="required">*</span></label>
                         <input type="text" id="endereco" name="endereco">
                     </div>
 
                     <div class="form-group">
-                        <label for="paineis">Quantidade de Painéis:</label>
+                        <label for="paineis">Quantidade de Painéis: <span class="required">*</span></label>
                         <input type="number" id="paineis" name="paineis" required min="0"
                             oninput="validarPositivo(this)">
                     </div>
 
                     <div class="form-group">
-                        <label for="potenciaPaineis">Potência dos Painéis (W):</label>
+                        <label for="potenciaPaineis">Potência dos Painéis (W): <span class="required">*</span></label>
                         <input type="number" id="potenciaPaineis" name="potenciaPaineis" required min="0"
                             oninput="validarPositivo(this)">
                     </div>
 
 
                     <div class="form-group">
-                        <label for="inversor">Inversor (kW):</label>
+                        <label for="inversor">Inversor (kW): <span class="required">*</span></label>
                         <input type="text" id="inversor" name="inversor" required min="0"
                             oninput="validarPositivo(this)">
                     </div>
 
                     <div class="form-group">
-                        <label for="tipoInversor">Tipo do Inversor:</label>
+                        <label for="tipoInversor">Tipo do Inversor: <span class="required">*</span></label>
                         <select id="tipoInversor" name="tipoInversor">
                             <option value="">Selecione</option>
                             <option value="Monofásico 220v">Monofásico 220v</option>
@@ -82,7 +90,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="estrutura">Estrutura:</label>
+                        <label for="estrutura">Estrutura: <span class="required">*</span></label>
                         <select id="estrutura" name="estrutura">
                             <option value="">Selecione</option>
                             <option value="Solo">Solo</option>
@@ -97,18 +105,18 @@
                     <legend class="pagamento">Forma de Pagamento</legend>
 
                     <div class="form-group">
-                        <label for="custo">Custo no Boleto (R$):</label>
+                        <label for="custo">Custo no Boleto (R$): <span class="required">*</span></label>
                         <input type="number" id="custo" name="custo" required min="0" oninput="validarPositivo(this)">
                     </div>
 
                     <div class="form-group">
-                        <label for="entrada">Valor de Entrada (R$):</label>
+                        <label for="entrada">Valor de Entrada (R$): <span class="required">*</span></label>
                         <input type="number" id="entrada" name="entrada" required min="0"
                             oninput="validarPositivo(this)">
                     </div>
 
                     <div class="form-group">
-                        <label for="parcelas">Quantidade de Parcelas:</label>
+                        <label for="parcelas">Quantidade de Parcelas: <span class="required">*</span></label>
                         <select id="parcelas" name="parcelas">
                             <option value="selecione">Selecione</option>
                             <option value="1">1X</option>
@@ -127,7 +135,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="taxa">Custo com Taxa Cartão (R$):</label>
+                        <label for="taxa">Custo com Taxa Cartão (R$): <span class="required">*</span></label>
                         <input type="number" id="taxa" name="taxa" required min="0" oninput="validarPositivo(this)">
                     </div>
                 </fieldset>
@@ -151,7 +159,7 @@
             <br>
             <br>
             <div class="responsive-table">
-                <table>
+                <table id="tabela1" class="tabela">
                     <thead>
                         <tr>
                             <th>Inversor (kW)</th>
@@ -317,7 +325,6 @@
                     </tbody>
                 </table>
             </div>
-
         </div>
 
     </section>
