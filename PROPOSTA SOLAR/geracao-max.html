@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Proposta</title>
+    <link rel="stylesheet" href="./css/geral.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+
+</head>
+
+<body>
+    <!-- INICIO HOME DA PAGINA-->
+
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
+    <aside class="menu">
+        <div class="menu-content">
+            <h1 onclick="getElementById('close-menu').checked = false;">
+                <a href="./index.html">
+                    <img src="./img/logo.png" alt="logo-da-pagina">
+                </a>
+            </h1>
+            <nav>
+                <ul onclick="getElementById('close-menu').checked = false;">
+                    <li><a href="#tabela-deye">Geração max. Inversor</a></li>
+                    <li><a href="./index.html">Gerador de Proposta</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </aside>
+    <!-- FIM HOME DA PAGINA-->
+
+    <div class="espaco"></div>
+
+    <!-- INICIO SEGUNDA SEÇÃO - GERAÇÃO MAX. INVERSOR DEYE-->
+
+    <section id="tabela-deye" class="section main-white">
+        <div class="white-content">
+            <h2>GERAÇÃO MAXIMA INVERSOR DEYE</h2>
+
+            <label for="potenciaPainel">Potência do Painel (W):</label>
+            <input class="input-table" type="number" id="potenciaPainel" name="potenciaPainel" value="550" step="5"
+                min="0" oninput="atualizarTabela(), validarPositivo(this)">
+            <br>
+            <br>
+            <div class="responsive-table">
+                <table id="tabela1" class="tabela">
+                    <thead>
+                        <tr>
+                            <th>Inversor (kW)</th>
+                            <th>KWP Max</th>
+                            <th> Máx. de Painéis</th>
+                            <th>Geração Máxima (kWh)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>3</td>
+                            <td>3.6</td>
+                            <td id="paineis3"></td>
+                            <td id="geracao3"></td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td>5.2</td>
+                            <td id="paineis4"></td>
+                            <td id="geracao4"></td>
+                        </tr>
+
+                        <tr>
+                            <td>5</td>
+                            <td>6.5</td>
+                            <td id="paineis5"></td>
+                            <td id="geracao5"></td>
+                        </tr>
+
+                        <tr>
+                            <td>8</td>
+                            <td>10.4</td>
+                            <td id="paineis8"></td>
+                            <td id="geracao8"></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>13</td>
+                            <td id="paineis10"></td>
+                            <td id="geracao10"></td>
+                        </tr>
+
+                        <tr>
+                            <td>12</td>
+                            <td>15.6</td>
+                            <td id="paineis12"></td>
+                            <td id="geracao12"></td>
+                        </tr>
+
+                        <tr>
+                            <td>15</td>
+                            <td>19.5</td>
+                            <td id="paineis15"></td>
+                            <td id="geracao15"></td>
+                        </tr>
+
+                        <tr>
+                            <td>18</td>
+                            <td>21.6</td>
+                            <td id="paineis18"></td>
+                            <td id="geracao18"></td>
+                        </tr>
+
+                        <tr>
+                            <td>20</td>
+                            <td>26</td>
+                            <td id="paineis20"></td>
+                            <td id="geracao20"></td>
+                        </tr>
+
+                        <tr>
+                            <td>25</td>
+                            <td>32.5</td>
+                            <td id="paineis25"></td>
+                            <td id="geracao25"></td>
+                        </tr>
+
+                        <tr>
+                            <td>30</td>
+                            <td>39</td>
+                            <td id="paineis30"></td>
+                            <td id="geracao30"></td>
+                        </tr>
+
+                        <tr>
+                            <td>35</td>
+                            <td>45.5</td>
+                            <td id="paineis35"></td>
+                            <td id="geracao35"></td>
+                        </tr>
+
+                        <tr>
+                            <td>40</td>
+                            <td>52</td>
+                            <td id="paineis40"></td>
+                            <td id="geracao40"></td>
+                        </tr>
+
+                        <tr>
+                            <td>45</td>
+                            <td>58.5</td>
+                            <td id="paineis45"></td>
+                            <td id="geracao45"></td>
+                        </tr>
+
+                        <tr>
+                            <td>50</td>
+                            <td>65</td>
+                            <td id="paineis50"></td>
+                            <td id="geracao50"></td>
+                        </tr>
+
+                        <tr>
+                            <td>60</td>
+                            <td>78</td>
+                            <td id="paineis60"></td>
+                            <td id="geracao60"></td>
+                        </tr>
+
+                        <tr>
+                            <td>70</td>
+                            <td>91</td>
+                            <td id="paineis70"></td>
+                            <td id="geracao70"></td>
+                        </tr>
+
+                        <tr>
+                            <td>75</td>
+                            <td>97.5</td>
+                            <td id="paineis75"></td>
+                            <td id="geracao75"></td>
+                        </tr>
+
+                        <tr>
+                            <td>80</td>
+                            <td>104</td>
+                            <td id="paineis80"></td>
+                            <td id="geracao80"></td>
+                        </tr>
+
+                        <tr>
+                            <td>90</td>
+                            <td>135</td>
+                            <td id="paineis90"></td>
+                            <td id="geracao90"></td>
+                        </tr>
+
+                        <tr>
+                            <td>100</td>
+                            <td>150</td>
+                            <td id="paineis100"></td>
+                            <td id="geracao100"></td>
+                        </tr>
+
+                        <tr>
+                            <td>110</td>
+                            <td>150</td>
+                            <td id="paineis110"></td>
+                            <td id="geracao110"></td>
+                        </tr>
+                        <!-- Adicione mais linhas conforme necessário -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- INICIO SEGUNDA SEÇÃO - GERAÇÃO MAX. INVERSOR DEYE-->
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

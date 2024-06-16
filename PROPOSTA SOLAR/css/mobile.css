@@ -88,4 +88,16 @@
     .espaco {
         display: none;
     }
+
+    .button {
+        display: block;
+        flex-direction: column;
+        margin-top: 0.1rem;
+
+    }
+
+    .button button {
+        min-width: 100%;
+
+    }
 }

@@ -4,7 +4,11 @@
 :root {
     --primary-color: #00426D;
     --white-color: #ffffff;
+    --growatt-color: #009e08;
+    --black-color: #000000;
+    /*Pagina Inversor Growatt*/
     --gap: 3rem;
+
 }
 
 * {
@@ -68,7 +72,8 @@ a {
 
 
 input,
-select {
+select,
+textarea {
     border: none;
     border-radius: 0.5rem;
     outline: none;
@@ -85,13 +90,20 @@ fieldset {
 
 /*cria nova borda no input*/
 input:focus {
-    border: 2px solid #003355;
+    border: 2px solid #075386;
     /* Altera a cor da borda quando o input está focado */
     box-shadow: 5px 5px 5px #003355;
     /* Adiciona um efeito de sombra azul */
 }
 
 select:focus {
+    border: 2px solid #003355;
+    /* Altera a cor da borda quando o input está focado */
+    box-shadow: 5px 5px 5px #003355;
+    /* Adiciona um efeito de sombra azul */
+}
+
+textarea:focus {
     border: 2px solid #003355;
     /* Altera a cor da borda quando o input está focado */
     box-shadow: 5px 5px 5px #003355;
