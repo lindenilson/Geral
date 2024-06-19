@@ -52,28 +52,33 @@
                         <label for="numeroWhatsApp">Número do WhatsApp (com DDD): <span
                                 class="required">*</span></label>
                         <input type="text" id="numeroWhatsApp" name="numeroWhatsApp" required>
+                        <span class="error-message">*Campo obrigatório</span>
                     </div>
 
                     <div class="form-group">
                         <label for="nome">Nome: <span class="required">*</span></label>
                         <input type="text" id="nome" name="nome" required>
+                        <span class="error-message">*Campo obrigatório</span>
                     </div>
 
                     <div class="form-group">
                         <label for="endereco">Endereço: <span class="required">*</span></label>
-                        <input type="text" id="endereco" name="endereco">
+                        <input type="text" id="endereco" name="endereco" required>
+                        <span class="error-message">*Campo obrigatório</span>
                     </div>
 
                     <div class="form-group">
                         <label for="paineis">Quantidade de Painéis: <span class="required">*</span></label>
                         <input type="number" id="paineis" name="paineis" required min="0"
                             oninput="validarPositivo(this)">
+                        <span class="error-message">*Campo obrigatório</span>
                     </div>
 
                     <div class="form-group">
                         <label for="potenciaPaineis">Potência dos Painéis (W): <span class="required">*</span></label>
                         <input type="number" id="potenciaPaineis" name="potenciaPaineis" required min="0" step="5"
                             oninput="validarPositivo(this)">
+                        <span class="error-message">*Campo obrigatório</span>
                     </div>
 
 
@@ -81,6 +86,7 @@
                         <label for="inversor">Inversor (kW): <span class="required">*</span></label>
                         <input type="text" id="inversor" name="inversor" required min="0"
                             oninput="validarPositivo(this)">
+                        <span class="error-message">*Campo obrigatório</span>
                     </div>
 
                     <div class="form-group">
@@ -91,11 +97,12 @@
                             <option value="Trifásico 380v">Trifásico 380v</option>
                             <option value="Trifásico 220v">Trifásico 220v</option>
                         </select>
+                        <span class="error-message">*Campo obrigatório</span>
                     </div>
 
                     <div class="form-group">
                         <label for="estrutura">Estrutura: <span class="required">*</span></label>
-                        <select id="estrutura" name="estrutura">
+                        <select id="estrutura" name="estrutura" required>
                             <option value="">Selecione</option>
                             <option value="Solo">Solo</option>
                             <option value="Telhado Metálico">Telhado Metálico</option>
@@ -104,6 +111,7 @@
                             <option value="Solo com Eucalipto por Conta do Cliente">Solo com Eucalipto por Conta do
                                 Cliente</option>
                         </select>
+                        <span class="error-message">*Campo obrigatório</span>
                     </div>
                 </fieldset>
 
@@ -113,17 +121,19 @@
                     <div class="form-group">
                         <label for="custo">Custo no Boleto (R$): <span class="required">*</span></label>
                         <input type="number" id="custo" name="custo" required min="0" oninput="validarPositivo(this)">
+                        <span class="error-message">*Campo obrigatório</span>
                     </div>
 
                     <div class="form-group">
                         <label for="entrada">Valor de Entrada (R$): <span class="required">*</span></label>
                         <input type="number" id="entrada" name="entrada" required min="0"
                             oninput="validarPositivo(this)">
+                        <span class="error-message">*Campo obrigatório</span>
                     </div>
 
                     <div class="form-group">
                         <label for="parcelas">Quantidade de Parcelas: <span class="required">*</span></label>
-                        <select id="parcelas" name="parcelas">
+                        <select id="parcelas" name="parcelas" required>
                             <option value="selecione">Selecione</option>
                             <option value="1">1X</option>
                             <option value="2">2X</option>
@@ -138,11 +148,13 @@
                             <option value="11">11X</option>
                             <option value="12">12X</option>
                         </select>
+                        <span class="error-message">*Campo obrigatório</span>
                     </div>
 
                     <div class="form-group">
                         <label for="taxa">Custo com Taxa Cartão (R$): <span class="required">*</span></label>
                         <input type="number" id="taxa" name="taxa" required min="0" oninput="validarPositivo(this)">
+                        <span class="error-message">*Campo obrigatório</span>
                     </div>
                 </fieldset>
                 <div class="textarea">

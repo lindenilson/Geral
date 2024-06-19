@@ -115,10 +115,27 @@ th {
 select {
     max-width: 100%;
     width: 100%;
-    border: none;
+
     padding: 1rem 1rem;
     margin-top: 0.5rem;
 
+}
+
+.error {
+    border: 0.2rem solid red;
+    /* background-color: rgb(240, 175, 175); */
+    transition: all 300ms ease-in-out;
+}
+
+.error:hover {
+    border: 0.2rem solid red;
+    /* background-color: rgb(255, 210, 210); */
+}
+
+.error-message {
+    color: var(--white-color);
+    font-size: 1.1rem;
+    display: none;
 }
 
 .textarea {
@@ -153,7 +170,8 @@ select {
 
 }
 
-tbody tr:nth-child(even) {
+
+.tabela tbody tr:nth-child(even) {
     background-color: #f5f5f58e;
     /* Cor de fundo das linhas pares */
 }
@@ -238,3 +256,47 @@ thead th {
 .espaco {
     height: 8rem;
 }
+
+/* COFIGURAÇÃO TABELA GROWATT */
+
+.main-growatt {
+    background-color: var(--growatt-color);
+}
+
+.main-growatt .input-table {
+    background-color: var(--white-color);
+    transition: all 300ms ease-in-out;
+}
+
+
+.main-growatt .input-table:focus {
+    border: 2px solid var(--black-color);
+    /* Altera a cor da borda quando o input está focado */
+    box-shadow: 5px 5px 5px var(--black-color);
+    /* Adiciona um efeito de sombra azul */
+}
+
+
+.growatt h2 {
+    color: var(--black-color);
+}
+
+.growatt tr th {
+    color: var(--black-color);
+}
+
+.growatt tr td {
+    color: var(--black-color);
+}
+
+.growatt tbody tr:nth-child(even) {
+    background-color: #ffffff;
+    /* Cor de fundo das linhas pares */
+}
+
+.growatt tbody tr:nth-child(odd) {
+    background-color: var(--growatt-color);
+    /* Cor de fundo das linhas pares */
+}
+
+/* COFIGURAÇÃO TABELA GROWATT */

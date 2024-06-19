@@ -31,7 +31,6 @@
                 <ul onclick="getElementById('close-menu').checked = false;">
                     <li><a href="#tabela-deye">Geração max. Inversor</a></li>
                     <li><a href="./index.html">Gerador de Proposta</a></li>
-
                 </ul>
             </nav>
         </div>
@@ -57,6 +56,7 @@
                         <tr>
                             <th>Inversor (kW)</th>
                             <th>KWP Max</th>
+                            <th> Min. de Painéis</th>
                             <th> Máx. de Painéis</th>
                             <th>Geração Máxima (kWh)</th>
                         </tr>
@@ -65,6 +65,7 @@
                         <tr>
                             <td>3</td>
                             <td>3.6</td>
+                            <td id="minPaineis3"></td>
                             <td id="paineis3"></td>
                             <td id="geracao3"></td>
                         </tr>
@@ -72,6 +73,7 @@
                         <tr>
                             <td>4</td>
                             <td>5.2</td>
+                            <td id="minPaineis4"></td>
                             <td id="paineis4"></td>
                             <td id="geracao4"></td>
                         </tr>
@@ -79,6 +81,7 @@
                         <tr>
                             <td>5</td>
                             <td>6.5</td>
+                            <td id="minPaineis5"></td>
                             <td id="paineis5"></td>
                             <td id="geracao5"></td>
                         </tr>
@@ -86,12 +89,14 @@
                         <tr>
                             <td>8</td>
                             <td>10.4</td>
+                            <td id="minPaineis8"></td>
                             <td id="paineis8"></td>
                             <td id="geracao8"></td>
                         </tr>
                         <tr>
                             <td>10</td>
                             <td>13</td>
+                            <td id="minPaineis10"></td>
                             <td id="paineis10"></td>
                             <td id="geracao10"></td>
                         </tr>
@@ -99,6 +104,7 @@
                         <tr>
                             <td>12</td>
                             <td>15.6</td>
+                            <td id="minPaineis12"></td>
                             <td id="paineis12"></td>
                             <td id="geracao12"></td>
                         </tr>
@@ -106,6 +112,7 @@
                         <tr>
                             <td>15</td>
                             <td>19.5</td>
+                            <td id="minPaineis15"></td>
                             <td id="paineis15"></td>
                             <td id="geracao15"></td>
                         </tr>
@@ -113,6 +120,7 @@
                         <tr>
                             <td>18</td>
                             <td>21.6</td>
+                            <td id="minPaineis18"></td>
                             <td id="paineis18"></td>
                             <td id="geracao18"></td>
                         </tr>
@@ -120,6 +128,7 @@
                         <tr>
                             <td>20</td>
                             <td>26</td>
+                            <td id="minPaineis20"></td>
                             <td id="paineis20"></td>
                             <td id="geracao20"></td>
                         </tr>
@@ -127,6 +136,7 @@
                         <tr>
                             <td>25</td>
                             <td>32.5</td>
+                            <td id="minPaineis25"></td>
                             <td id="paineis25"></td>
                             <td id="geracao25"></td>
                         </tr>
@@ -134,6 +144,7 @@
                         <tr>
                             <td>30</td>
                             <td>39</td>
+                            <td id="minPaineis30"></td>
                             <td id="paineis30"></td>
                             <td id="geracao30"></td>
                         </tr>
@@ -141,6 +152,7 @@
                         <tr>
                             <td>35</td>
                             <td>45.5</td>
+                            <td id="minPaineis35"></td>
                             <td id="paineis35"></td>
                             <td id="geracao35"></td>
                         </tr>
@@ -148,6 +160,7 @@
                         <tr>
                             <td>40</td>
                             <td>52</td>
+                            <td id="minPaineis40"></td>
                             <td id="paineis40"></td>
                             <td id="geracao40"></td>
                         </tr>
@@ -155,6 +168,7 @@
                         <tr>
                             <td>45</td>
                             <td>58.5</td>
+                            <td id="minPaineis45"></td>
                             <td id="paineis45"></td>
                             <td id="geracao45"></td>
                         </tr>
@@ -162,6 +176,7 @@
                         <tr>
                             <td>50</td>
                             <td>65</td>
+                            <td id="minPaineis50"></td>
                             <td id="paineis50"></td>
                             <td id="geracao50"></td>
                         </tr>
@@ -169,6 +184,7 @@
                         <tr>
                             <td>60</td>
                             <td>78</td>
+                            <td id="minPaineis60"></td>
                             <td id="paineis60"></td>
                             <td id="geracao60"></td>
                         </tr>
@@ -176,6 +192,7 @@
                         <tr>
                             <td>70</td>
                             <td>91</td>
+                            <td id="minPaineis70"></td>
                             <td id="paineis70"></td>
                             <td id="geracao70"></td>
                         </tr>
@@ -183,6 +200,7 @@
                         <tr>
                             <td>75</td>
                             <td>97.5</td>
+                            <td id="minPaineis75"></td>
                             <td id="paineis75"></td>
                             <td id="geracao75"></td>
                         </tr>
@@ -190,6 +208,7 @@
                         <tr>
                             <td>80</td>
                             <td>104</td>
+                            <td id="minPaineis80"></td>
                             <td id="paineis80"></td>
                             <td id="geracao80"></td>
                         </tr>
@@ -197,6 +216,7 @@
                         <tr>
                             <td>90</td>
                             <td>135</td>
+                            <td id="minPaineis90"></td>
                             <td id="paineis90"></td>
                             <td id="geracao90"></td>
                         </tr>
@@ -204,6 +224,7 @@
                         <tr>
                             <td>100</td>
                             <td>150</td>
+                            <td id="minPaineis100"></td>
                             <td id="paineis100"></td>
                             <td id="geracao100"></td>
                         </tr>
@@ -211,9 +232,11 @@
                         <tr>
                             <td>110</td>
                             <td>150</td>
+                            <td id="minPaineis110"></td>
                             <td id="paineis110"></td>
                             <td id="geracao110"></td>
                         </tr>
+
                         <!-- Adicione mais linhas conforme necessário -->
                     </tbody>
                 </table>
@@ -223,6 +246,142 @@
     </section>
 
     <!-- INICIO SEGUNDA SEÇÃO - GERAÇÃO MAX. INVERSOR DEYE-->
+
+
+    <!-- INICIO SEGUNDA SEÇÃO - GERAÇÃO MAX. INVERSOR GROWATT -->
+
+    <section id="tabela-growatt" class="section main-white main-growatt">
+        <div class="white-content growatt">
+            <h2>GERAÇÃO MAXIMA INVERSOR GROWATT</h2>
+
+            <label style="color: var(--black-color);" for="potenciaPainelGrowatt">Potência do Painel (W):</label>
+            <input class="input-table" type="number" id="potenciaPainelGrowatt" name="potenciaPainelGrowatt" value="550"
+                step="5" min="0" oninput="atualizarTabelaGrowatt(), validarPositivo(this)">
+            <br>
+            <br>
+            <div class="responsive-table responsive-table-growatt ">
+                <table id="tabelaGrowatt" class="tabela">
+                    <thead>
+                        <tr>
+                            <th>Inversor (kW)</th>
+                            <th>KWP Max</th>
+                            <th> Min. de Painéis</th>
+                            <th> Máx. de Painéis</th>
+                            <th>Geração Máxima (kWh)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>3</td>
+                            <td>4.2</td>
+                            <td id="minPaineisGrowatt3"></td>
+                            <td id="paineisGrowatt3"></td>
+                            <td id="geracaoGrowatt3"></td>
+                        </tr>
+
+                        <tr>
+                            <td>5</td>
+                            <td>7</td>
+                            <td id="minPaineisGrowatt5"></td>
+                            <td id="paineisGrowatt5"></td>
+                            <td id="geracaoGrowatt5"></td>
+                        </tr>
+
+                        <tr>
+                            <td>6</td>
+                            <td>8.1</td>
+                            <td id="minPaineisGrowatt6"></td>
+                            <td id="paineisGrowatt6"></td>
+                            <td id="geracaoGrowatt6"></td>
+                        </tr>
+
+                        <tr>
+                            <td>8</td>
+                            <td>10.5</td>
+                            <td id="minPaineisGrowatt8"></td>
+                            <td id="paineisGrowatt8"></td>
+                            <td id="geracaoGrowatt8"></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>15</td>
+                            <td id="minPaineisGrowatt10"></td>
+                            <td id="paineisGrowatt10"></td>
+                            <td id="geracaoGrowatt10"></td>
+                        </tr>
+
+                        <tr>
+                            <td>15</td>
+                            <td>22.5</td>
+                            <td id="minPaineisGrowatt15"></td>
+                            <td id="paineisGrowatt15"></td>
+                            <td id="geracaoGrowatt15"></td>
+                        </tr>
+
+                        <tr>
+                            <td>20</td>
+                            <td>30</td>
+                            <td id="minPaineisGrowatt20"></td>
+                            <td id="paineisGrowatt20"></td>
+                            <td id="geracaoGrowatt20"></td>
+                        </tr>
+
+                        <tr>
+                            <td>25</td>
+                            <td>37.5</td>
+                            <td id="minPaineisGrowatt25"></td>
+                            <td id="paineisGrowatt25"></td>
+                            <td id="geracaoGrowatt25"></td>
+                        </tr>
+
+                        <tr>
+                            <td>30</td>
+                            <td>45</td>
+                            <td id="minPaineisGrowatt30"></td>
+                            <td id="paineisGrowatt30"></td>
+                            <td id="geracaoGrowatt30"></td>
+                        </tr>
+
+                        <tr>
+                            <td>40</td>
+                            <td>60</td>
+                            <td id="minPaineisGrowatt40"></td>
+                            <td id="paineisGrowatt40"></td>
+                            <td id="geracaoGrowatt40"></td>
+                        </tr>
+
+                        <tr>
+                            <td>50</td>
+                            <td>75</td>
+                            <td id="minPaineisGrowatt50"></td>
+                            <td id="paineisGrowatt50"></td>
+                            <td id="geracaoGrowatt50"></td>
+                        </tr>
+
+                        <tr>
+                            <td>60</td>
+                            <td>90</td>
+                            <td id="minPaineisGrowatt60"></td>
+                            <td id="paineisGrowatt60"></td>
+                            <td id="geracaoGrowatt60"></td>
+                        </tr>
+
+                        <tr>
+                            <td>75</td>
+                            <td>112.4</td>
+                            <td id="minPaineisGrowatt75"></td>
+                            <td id="paineisGrowatt75"></td>
+                            <td id="geracaoGrowatt75"></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- FIM SEGUNDA SEÇÃO - GERAÇÃO MAX. INVERSOR GROWATT -->
+
 
     <script src="./js/script.js"></script>
 </body>
