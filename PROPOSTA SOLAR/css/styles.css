@@ -290,12 +290,12 @@ thead th {
 }
 
 .growatt tbody tr:nth-child(even) {
-    background-color: #ffffff;
+    background-color: #ffffffc9;
     /* Cor de fundo das linhas pares */
 }
 
 .growatt tbody tr:nth-child(odd) {
-    background-color: var(--growatt-color);
+    background-color: var(--white-color);
     /* Cor de fundo das linhas pares */
 }
 

@@ -24,6 +24,7 @@
     justify-content: space-between;
     padding-top: 0;
     padding-bottom: 0;
+    align-items: center;
 }
 
 /* FIM CONFIGURAÇÃO DE CLASSES PADRÃO */
@@ -50,7 +51,7 @@
     text-decoration: none;
     /*REMOVE TRAÇO ABAIXO DO LINK*/
     color: var(--primary-color);
-    padding: 3rem;
+    padding: 2.5rem 3rem;
     font-size: 1.6rem;
     position: relative;
 }
@@ -81,6 +82,23 @@
     display: none;
 }
 
+
+.drop-hover {
+    position: relative;
+}
+
+.drop-hover .drop {
+    width: 100%;
+    position: absolute;
+    background-color: rgb(247, 247, 247);
+    height: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.drop-hover:hover .drop {
+    height: 18rem;
+}
 
 /* FIM BARRA ABAIXO DO MENU QUANDO PASSA O MOUSE*/
 

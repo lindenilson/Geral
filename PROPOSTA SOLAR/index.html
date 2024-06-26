@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/mobile.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
 
     <link rel="icon" type="image/x-icon" href="./img/favicon.png">
@@ -29,8 +30,13 @@
             </h1>
             <nav>
                 <ul onclick="getElementById('close-menu').checked = false;">
-                    <li><a href="./geracao-max.html">Geração max. Inversor</a></li>
                     <li><a href="#gerador-proposta">Gerador de Proposta</a></li>
+                    <li class="drop-hover"><a href="#">Geração max. Inversor <i class='bx bxs-down-arrow'></i></a>
+                        <div class="drop">
+                            <a href="./geracao-max.html#tabela-deye">Inversor Deye</a>
+                            <a href="geracao-max.html#tabela-growatt">Inversor Growatt</a>
+                        </div>
+                    </li>
 
                 </ul>
             </nav>
