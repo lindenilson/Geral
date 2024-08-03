@@ -186,7 +186,7 @@ checkoutBtn.addEventListener("click", function () {
         )
     }).join("\n");
 
-    const message = encodeURIComponent(`👋 Olá, meu nome é ${pessoa.value}.\n\n📋 *Gostaria de fazer um pedido com os seguintes itens:*\n\n${cartItems}\n\nTotal Produtos: R$ ${totalProdutos.toFixed(2)}\nFrete: R$ ${frete.toFixed(2)}\n*Total Pedido: R$ ${totalComFrete.toFixed(2)}*\n\nMeu endereço para entrega é:\n${addressInput.value}\n\n*Observação:*\n⚠ ${obs.value}\n\n🙏 Agradeço pela atenção e aguardo a confirmação do pedido.`);
+    const message = encodeURIComponent(`👋 Olá, meu nome é ${pessoa.value}.\n\n📋 *Gostaria de fazer um pedido com os seguintes itens:*\n\n${cartItems}\n\nTotal Produtos: R$ ${totalProdutos.toFixed(2)}\nFrete: R$ ${frete.toFixed(2)}\n*Total Pedido:* R$ ${totalComFrete.toFixed(2)}\n\nMeu endereço para entrega é:\n${addressInput.value}\n\n⚠ *Observação:*\n${obs.value}\n\n🙏 Agradeço pela atenção e aguardo a confirmação do pedido.`);
     const phone = "77981071559";
     window.open(`https://wa.me/${phone}?text=${message}`, "_blank");
 
