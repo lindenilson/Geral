@@ -8,7 +8,14 @@
     <link rel="stylesheet" href="./css/output.css">
     <link rel="stylesheet" href="./css/styles.css">
 
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"/>
+    <!--META TAG OG-->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Top hambuguer" />
+    <meta property="og:image" content="https://delivery-card11.netlify.app/assets/hamb-1.png" />
+    <meta property="og:description" content="O melhor hamburguer da cidade" />
+    <meta property="og:site_name" content="delivery Card" />
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -50,186 +57,189 @@
 
     <div id="menu">
         <div class="menu-section" id="hamburgers-section">
-            <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-8 section-content" id="hamburgers-content">
-            <!-- PRODUTO ITEM -->
-            <div class="flex gap-2">
-                <img src="./assets/hamb-1.png" alt="hamburguer smash"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-200">
-                <div>
-                    <p class="font-bold">Nome produto</p>
-                    <p class="text-sm"> Descrição do produto, qual ingrediente e peso, tudo sobre o produto</p>
+            <main
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-8 section-content"
+                id="hamburgers-content">
+                <!-- PRODUTO ITEM -->
+                <div class="flex gap-2">
+                    <img src="./assets/hamb-1.png" alt="hamburguer smash"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-200">
+                    <div>
+                        <p class="font-bold">Nome produto</p>
+                        <p class="text-sm"> Descrição do produto, qual ingrediente e peso, tudo sobre o produto</p>
 
-                    <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$ 18,90</p>
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">R$ 18,90</p>
 
-                        <button class=" bg-gray-900 px-5 rounded add-to-cart-btn" data-name="produto1"
-                            data-price="18.90">
+                            <button class=" bg-gray-900 px-5 rounded add-to-cart-btn" data-name="produto1"
+                                data-price="18.90">
 
-                            <i class="fa fa-cart-plus text-lg text-white"></i>
-                        </button>
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
 
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- FIM PRODUTO ITEM -->
+                <!-- FIM PRODUTO ITEM -->
 
-            <!-- PRODUTO ITEM2 -->
-            <div class="flex gap-2">
-                <img src="./assets/hamb-2.png" alt="hamburguer duplo"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-200">
-                <div>
-                    <p class="font-bold">Nome produto</p>
-                    <p class="text-sm"> Descrição do produto, qual ingrediente e peso, tudo sobre o produto</p>
+                <!-- PRODUTO ITEM2 -->
+                <div class="flex gap-2">
+                    <img src="./assets/hamb-2.png" alt="hamburguer duplo"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-200">
+                    <div>
+                        <p class="font-bold">Nome produto</p>
+                        <p class="text-sm"> Descrição do produto, qual ingrediente e peso, tudo sobre o produto</p>
 
-                    <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$ 20,90</p>
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">R$ 20,90</p>
 
-                        <button class=" bg-gray-900 px-5 rounded add-to-cart-btn" data-name="produto2"
-                            data-price="20.90">
+                            <button class=" bg-gray-900 px-5 rounded add-to-cart-btn" data-name="produto2"
+                                data-price="20.90">
 
-                            <i class="fa fa-cart-plus text-lg text-white"></i>
-                        </button>
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
 
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- FIM PRODUTO ITEM -->
+                <!-- FIM PRODUTO ITEM -->
 
-            <!-- PRODUTO ITEM -->
-            <div class="flex gap-2">
-                <img src="./assets/hamb-3.png" alt="hamburguer 3"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-200">
-                <div>
-                    <p class="font-bold">Nome produto</p>
-                    <p class="text-sm"> Descrição do produto, qual ingrediente e peso, tudo sobre o produto</p>
+                <!-- PRODUTO ITEM -->
+                <div class="flex gap-2">
+                    <img src="./assets/hamb-3.png" alt="hamburguer 3"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-200">
+                    <div>
+                        <p class="font-bold">Nome produto</p>
+                        <p class="text-sm"> Descrição do produto, qual ingrediente e peso, tudo sobre o produto</p>
 
-                    <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$ 19,90</p>
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">R$ 19,90</p>
 
-                        <button class=" bg-gray-900 px-5 rounded add-to-cart-btn" data-name="produto3"
-                            data-price="19.90">
+                            <button class=" bg-gray-900 px-5 rounded add-to-cart-btn" data-name="produto3"
+                                data-price="19.90">
 
-                            <i class="fa fa-cart-plus text-lg text-white"></i>
-                        </button>
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
 
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- FIM PRODUTO ITEM -->
+                <!-- FIM PRODUTO ITEM -->
 
-            <!-- PRODUTO ITEM -->
-            <div class="flex gap-2">
-                <img src="./assets/hamb-4.png" alt="hamburguer 4"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-200">
-                <div>
-                    <p class="font-bold">Nome produto</p>
-                    <p class="text-sm"> Descrição do produto, qual ingrediente e peso, tudo sobre o produto</p>
+                <!-- PRODUTO ITEM -->
+                <div class="flex gap-2">
+                    <img src="./assets/hamb-4.png" alt="hamburguer 4"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-200">
+                    <div>
+                        <p class="font-bold">Nome produto</p>
+                        <p class="text-sm"> Descrição do produto, qual ingrediente e peso, tudo sobre o produto</p>
 
-                    <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$ 25,99</p>
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">R$ 25,99</p>
 
-                        <button class=" bg-gray-900 px-5 rounded add-to-cart-btn" data-name="produto4"
-                            data-price="25.99">
+                            <button class=" bg-gray-900 px-5 rounded add-to-cart-btn" data-name="produto4"
+                                data-price="25.99">
 
-                            <i class="fa fa-cart-plus text-lg text-white"></i>
-                        </button>
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
 
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- FIM PRODUTO ITEM -->
+                <!-- FIM PRODUTO ITEM -->
 
-            <!-- PRODUTO ITEM -->
-            <div class="flex gap-2">
-                <img src="./assets/hamb-5.png" alt="hamburguer 5"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-200">
-                <div>
-                    <p class="font-bold">Nome produto</p>
-                    <p class="text-sm"> Descrição do produto, qual ingrediente e peso, tudo sobre o produto</p>
+                <!-- PRODUTO ITEM -->
+                <div class="flex gap-2">
+                    <img src="./assets/hamb-5.png" alt="hamburguer 5"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-200">
+                    <div>
+                        <p class="font-bold">Nome produto</p>
+                        <p class="text-sm"> Descrição do produto, qual ingrediente e peso, tudo sobre o produto</p>
 
-                    <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$ 22,90</p>
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">R$ 22,90</p>
 
-                        <button class=" bg-gray-900 px-5 rounded add-to-cart-btn" data-name="produto5"
-                            data-price="22.90">
+                            <button class=" bg-gray-900 px-5 rounded add-to-cart-btn" data-name="produto5"
+                                data-price="22.90">
 
-                            <i class="fa fa-cart-plus text-lg text-white"></i>
-                        </button>
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
 
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- FIM PRODUTO ITEM -->
+                <!-- FIM PRODUTO ITEM -->
 
 
-            <!-- PRODUTO ITEM -->
-            <div class="flex gap-2">
-                <img src="./assets/hamb-6.png" alt="hamburguer 6"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-200">
-                <div>
-                    <p class="font-bold">Nome produto</p>
-                    <p class="text-sm"> Descrição do produto, qual ingrediente e peso, tudo sobre o produto</p>
+                <!-- PRODUTO ITEM -->
+                <div class="flex gap-2">
+                    <img src="./assets/hamb-6.png" alt="hamburguer 6"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-200">
+                    <div>
+                        <p class="font-bold">Nome produto</p>
+                        <p class="text-sm"> Descrição do produto, qual ingrediente e peso, tudo sobre o produto</p>
 
-                    <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$ 26,90</p>
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">R$ 26,90</p>
 
-                        <button class=" bg-gray-900 px-5 rounded add-to-cart-btn" data-name="produto6"
-                            data-price="26.90">
+                            <button class=" bg-gray-900 px-5 rounded add-to-cart-btn" data-name="produto6"
+                                data-price="26.90">
 
-                            <i class="fa fa-cart-plus text-lg text-white"></i>
-                        </button>
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
 
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- FIM PRODUTO ITEM -->
+                <!-- FIM PRODUTO ITEM -->
 
-            <!-- PRODUTO ITEM -->
-            <div class="flex gap-2">
-                <img src="./assets/hamb-7.png" alt="hamburguer 7"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-200">
-                <div>
-                    <p class="font-bold">Nome produto</p>
-                    <p class="text-sm"> Descrição do produto, qual ingrediente e peso, tudo sobre o produto</p>
+                <!-- PRODUTO ITEM -->
+                <div class="flex gap-2">
+                    <img src="./assets/hamb-7.png" alt="hamburguer 7"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-200">
+                    <div>
+                        <p class="font-bold">Nome produto</p>
+                        <p class="text-sm"> Descrição do produto, qual ingrediente e peso, tudo sobre o produto</p>
 
-                    <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$ 28,90</p>
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">R$ 28,90</p>
 
-                        <button class=" bg-gray-900 px-5 rounded add-to-cart-btn" data-name="produto7"
-                            data-price="28.90">
+                            <button class=" bg-gray-900 px-5 rounded add-to-cart-btn" data-name="produto7"
+                                data-price="28.90">
 
-                            <i class="fa fa-cart-plus text-lg text-white"></i>
-                        </button>
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
 
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- FIM PRODUTO ITEM -->
+                <!-- FIM PRODUTO ITEM -->
 
-            <!-- PRODUTO ITEM -->
-            <div class="flex gap-2">
-                <img src="./assets/hamb-8.png" alt="hamburguer 8"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-200">
-                <div>
-                    <p class="font-bold">Nome produto</p>
-                    <p class="text-sm"> Descrição do produto, qual ingrediente e peso, tudo sobre o produto</p>
+                <!-- PRODUTO ITEM -->
+                <div class="flex gap-2">
+                    <img src="./assets/hamb-8.png" alt="hamburguer 8"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-200">
+                    <div>
+                        <p class="font-bold">Nome produto</p>
+                        <p class="text-sm"> Descrição do produto, qual ingrediente e peso, tudo sobre o produto</p>
 
-                    <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$ 30,90</p>
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">R$ 30,90</p>
 
-                        <button class=" bg-gray-900 px-5 rounded add-to-cart-btn" data-name="produto8"
-                            data-price="30.90">
+                            <button class=" bg-gray-900 px-5 rounded add-to-cart-btn" data-name="produto8"
+                                data-price="30.90">
 
-                            <i class="fa fa-cart-plus text-lg text-white"></i>
-                        </button>
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
 
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- FIM PRODUTO ITEM -->
-        </main>
-        <button class="bg-black text-white px-4 py-2 rounded mx-auto block" onclick="toggleSection('hamburgers-content', this)">Ver Tudo</button>
-    </div>
+                <!-- FIM PRODUTO ITEM -->
+            </main>
+            <button class="bg-black text-white px-4 py-2 rounded mx-auto block"
+                onclick="toggleSection('hamburgers-content', this)">Ver Tudo</button>
+        </div>
 
         <div class="mx-auto ma-w-7x1 px-2 my-2 mb-5">
             <h2 class="font-bold text-2xl md:text-3x1 text-left ml-2">Bebidas</h2>
@@ -237,76 +247,82 @@
 
         <!--GRID BEBIDAS-->
         <div class="menu-section" id="beverages-section">
-            <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-8 section-content" id="beverages-content">
-            <!-- BEBIDA ITEM -->
-            <div class="flex gap-2 w-full">
-                <img src="./assets/refri-1.png" alt="coca lata"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-200">
-                <div class="w-full">
-                    <p class="font-bold">Coca Lata</p>
+            <main
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-8 section-content"
+                id="beverages-content">
+                <!-- BEBIDA ITEM -->
+                <div class="flex gap-2 w-full">
+                    <img src="./assets/refri-1.png" alt="coca lata"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-200">
+                    <div class="w-full">
+                        <p class="font-bold">Coca Lata</p>
 
-                    <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$ 5,99</p>
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">R$ 5,99</p>
 
-                        <button class=" bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Coca Lata"
-                            data-price="5.99">
+                            <button class=" bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Coca Lata"
+                                data-price="5.99">
 
-                            <i class="fa fa-cart-plus text-lg text-white"></i>
-                        </button>
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
 
+                        </div>
                     </div>
+
                 </div>
+                <!-- FIM BEBIDA ITEM -->
 
-            </div>
-            <!-- FIM BEBIDA ITEM -->
+                <!-- BEBIDA ITEM -->
+                <div class="flex gap-2 w-full">
+                    <img src="./assets/refri-2.png" alt="guarana lata"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-200">
+                    <div class="w-full">
+                        <p class="font-bold">Guarana Lata</p>
 
-            <!-- BEBIDA ITEM -->
-            <div class="flex gap-2 w-full">
-                <img src="./assets/refri-2.png" alt="guarana lata"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-200">
-                <div class="w-full">
-                    <p class="font-bold">Guarana Lata</p>
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">R$ 5,99</p>
 
-                    <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$ 5,99</p>
+                            <button class=" bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Guarana Lata"
+                                data-price="5.99">
 
-                        <button class=" bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Guarana Lata"
-                            data-price="5.99">
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
 
-                            <i class="fa fa-cart-plus text-lg text-white"></i>
-                        </button>
-
+                        </div>
                     </div>
-                </div>
 
-            </div>
-            <!-- FIM BEBIDA ITEM -->
-            
-        </main>
-        <button class="bg-black text-white px-4 py-2 rounded mb-16 mx-auto block" onclick="toggleSection('beverages-content', this)">Ver Tudo</button>
+                </div>
+                <!-- FIM BEBIDA ITEM -->
+
+            </main>
+            <button class="bg-black text-white px-4 py-2 rounded mb-16 mx-auto block"
+                onclick="toggleSection('beverages-content', this)">Ver Tudo</button>
+        </div>
     </div>
-</div>
 
 
 
-<!-- Título da Seção -->
-<div class="mx-auto max-w-7x1 px-2 my-2 mb-5 hidden">
-    <h2 class="font-bold text-2xl md:text-3x1 text-left ml-2">Porções</h2>
-</div>
+    <!-- Título da Seção -->
+    <div class="mx-auto max-w-7x1 px-2 my-2 mb-5 hidden">
+        <h2 class="font-bold text-2xl md:text-3x1 text-left ml-2">Porções</h2>
+    </div>
 
-<!-- Conteúdo da Seção -->
- <!-- mudar nome da section, mudar id =, colocar no button id colocado -->
-<div id="menu" class="hidden">
-    <main class="section-content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-8" id="portions">
-        <!-- PRODUTO ITEM -->
-        <!-- Adicione os itens do produto aqui -->
+    <!-- Conteúdo da Seção -->
+    <!-- mudar nome da section, mudar id =, colocar no button id colocado -->
+    <div id="menu" class="hidden">
+        <main
+            class="section-content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-8"
+            id="portions">
+            <!-- PRODUTO ITEM -->
+            <!-- Adicione os itens do produto aqui -->
 
-    </main>
-    <div class="flex justify-center">
-        <button class="toggle-btn bg-black text-white px-4 py-2 rounded mb-16" onclick="toggleSection('portions', this)">Ver Tudo</button>
+        </main>
+        <div class="flex justify-center">
+            <button class="toggle-btn bg-black text-white px-4 py-2 rounded mb-16"
+                onclick="toggleSection('portions', this)">Ver Tudo</button>
 
-    </div> 
-</div>
+        </div>
+    </div>
 
 
 
@@ -322,33 +338,46 @@
     <!-- FIM BUTTON CART FOOTER -->
 
     <!--MODAL CART-->
-<div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" id="cart-modal">
-    <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
-        <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
+    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" id="cart-modal">
+        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+            <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
 
-        <div id="cart-items" class="flex justify-between flex-col max-h-48 overflow-y-auto"></div>
-        <p class="font-bold mt-1">Total: <span id="cart-total">0.00</span></p>
+            <div id="cart-items"
+                class="flex justify-between flex-col max-h-36 overflow-y-auto border-solid border-2 border-black pl-2">
+            </div>
 
-        <p class="font-bold mt-4">Nome:</p>
-        <input type="text" placeholder="Digite seu nome..." id="pessoa" class="w-full border-2 p-1 rounded my-1">
+            <div class="flex items-center justify-between">
+                <p class="font-normal mt-1">Frete: <span id="frete">R$ 0,00</span></p>
+                <p class="font-normal mt-1">Total: <span id="cart-total">0.00</span></p>
 
-        <p class="text-red-500 hidden" id="name-warn">Digite seu nome!</p>
+            </div>
+            <p class="font-bold">Total com Frete: <span id="total-com-frete">R$ 0,00</span></p>
 
-        <p class="font-bold mt-4">Endereço de Entrega:</p>
-        <input type="text" placeholder="Digite seu endereço completo..." id="address" class="w-full border-2 p-1 rounded my-1">
 
-        <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo!</p>
+            <p class="font-bold mt-1">Nome:</p>
+            <input type="text" placeholder="Digite seu nome..." id="pessoa" class="w-full border-2 p-1 rounded my-1">
 
-        <p class="font-bold mt-4">Observações:</p>
-        <input type="text" placeholder="Digite seu observação..." id="obs" class="w-full border-2 p-1 rounded my-1">
+            <p class="text-red-500 hidden" id="name-warn">Digite seu nome!</p>
 
-        <div class="flex items-center justify-between mt-5 w-full">
-            <button id="close-modal-btn">Fechar</button>
-            <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar Pedido</button>
+            <p class="font-bold mt-1">CEP:</p>
+            <input type="text" placeholder="Digite seu CEP..." id="cep" class="w-full border-2 p-1 rounded my-1">
+
+            <p class="font-bold mt-1">Endereço de Entrega:</p>
+            <input type="text" placeholder="Digite seu endereço completo..." id="address"
+                class="w-full border-2 p-1 rounded my-1">
+
+            <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo!</p>
+
+            <p class="font-bold mt-1">Observações:</p>
+            <input type="text" placeholder="Digite seu observação..." id="obs" class="w-full border-2 p-1 rounded my-1">
+
+            <div class="flex items-center justify-between mt-5 w-full">
+                <button id="close-modal-btn">Fechar</button>
+                <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar Pedido</button>
+            </div>
         </div>
     </div>
-</div>
-<!--FIM MODAL CART-->
+    <!--FIM MODAL CART-->
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="./script.js"></script>
