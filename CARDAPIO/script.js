@@ -17,6 +17,9 @@ const cepInput = document.getElementById("cep");
 const freteDisplay = document.getElementById("frete");
 const totalComFreteDisplay = document.getElementById("total-com-frete");
 
+//NAVBAR
+const toggleMenuOpen = () => document.body.classList.toggle('open');
+
 let cart = [];
 
 // ABRIR MODAL DO CARRINHO
