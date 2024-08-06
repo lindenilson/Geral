@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome Estabelicimento</title>
+    <link rel="stylesheet" href="./css/output.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/sobre-nos.css">
+
+    <!--META TAG OG-->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Top hambuguer" />
+    <meta property="og:image" content="https://delivery-card11.netlify.app/assets/hamb-1.png" />
+    <meta property="og:description" content="O melhor hamburguer da cidade" />
+    <meta property="og:site_name" content="delivery Card" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <nav class="navbar shadow-xl">
+        <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+
+        <button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
+            <span class="material-icons">menu</span>
+        </button>
+        <h1 class="font-bold text-7xl navbar-title">LOGO</h1>
+        <nav class="navbar-menu">
+            <a href="index.html#header">
+                <button type="button">Inicio</button>
+            </a>
+            <a href="#">
+                <button type="button">Cardápio</button>
+            </a>
+            <a href="sobre-nos.html">
+                <button type="button">Sobre nós</button>
+            </a>
+            <a href="#">
+                <button type="button">Nossa Localização</button>
+            </a>
+        </nav>
+        <div class="navbar-redes">
+            <a href="#"><i class="bi bi-whatsapp"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+        </div>
+        <button type="button" class="navbar-close" onclick="toggleMenuOpen()">
+            <span class="material-icons">close</span>
+        </button>
+    </nav>
+    <!-- FIM NAVBAR-->
+
+    <div class="spacing"></div>
+
+    <section class="flex flex-col w-full min-h-screen">
+        <div class="mt-5">
+            <h2 class="text-3xl font-bold text-center"> Nossa Localização </h2>
+
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3225.8132814205237!2d-42.76855042489805!3d-14.373058686086743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTTCsDIyJzIzLjAiUyA0MsKwNDUnNTcuNSJX!5e1!3m2!1spt-BR!2sbr!4v1722985895548!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen=""
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
