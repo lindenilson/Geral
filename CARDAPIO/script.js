@@ -203,9 +203,9 @@ function checkHora() {
     const dia = data.getDay(); // 0 (domingo) a 6 (sábado)
     const hora = data.getHours();
 
-    const diasAbertos = [3, 4, 5, 6, 0]; // Quinta-feira (4) a Domingo (0)
+    const diasAbertos = [1, 2, 3, 4, 5, 6, 0]; // Quinta-feira (4) a Domingo (0)
 
-    const estaAberto = diasAbertos.includes(dia) && hora >= 7 && hora < 22;
+    const estaAberto = diasAbertos.includes(dia) && hora >= 1 && hora < 22;
     return estaAberto;
 }
 
